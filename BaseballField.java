@@ -159,7 +159,6 @@ public class BaseballField extends JPanel implements ActionListener{
         opRunsDisp.setVisible(true);
         this.runsDisp.setText("You have " + Integer.toString(this.runs) + " runs");
         this.outsDisp.setText("There are " + Integer.toString(this.outs) + " outs");
-        this.opRunsDisp.setText("Try to beat " + Integer.toString(this.compRuns) + " runs");
     }
 
     public void checkRun(){
@@ -238,6 +237,7 @@ public class BaseballField extends JPanel implements ActionListener{
                     //     this.outs++;
                     //     this.outsDisp.setText("There are " + Integer.toString(this.outs) + " outs");
                     // }
+                    this.opRunsDisp.setText("Try to beat " + Integer.toString(this.compRuns) + " runs");
                 } else {
                     player.swing(false);
                 }
